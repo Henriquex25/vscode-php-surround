@@ -1,28 +1,7 @@
-# Surround
+# PHP Surround
+<h5 style="text-align: center;">Wrap blocks of PHP code quickly! 🚀</h5>
 
-[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/yatki.vscode-surround.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround)
-[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/yatki.vscode-surround.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround)
-[![GitHub last commit](https://img.shields.io/github/last-commit/yatki/vscode-surround.svg?style=flat-square)](https://github.com/yatki/vscode-surround)
-[![License](https://img.shields.io/github/license/yatki/vscode-surround.svg?style=flat-square)](https://github.com/yatki/vscode-surround)
-
-<p align="center">
-<br />
-<img src="https://raw.githubusercontent.com/yatki/vscode-surround/master/images/logo.png">
-</p>
-<p align="center">
-A simple yet powerful extension to add wrapper snippets around your code blocks.
-</p>
-
-## Features
-
-- Now works on [VSCode for Web](https://code.visualstudio.com/docs/editor/vscode-web) 🚀**New!**
-- Supports **language identifiers** 
-- Supports **multi** selections
-- Fully **customizable**
-- **Custom** wrapper snippets
-- You can assign **shortcuts** for _each_ wrapper snippets separately
-- Nicely formatted (Preserves indentations)
-- Sorts recently used snippets on top
+*A fork of the [Surround](https://github.com/yatki/vscode-surround/tree/master) extension*
 
 ### Demo 1: Choosing a wrapper snippet from quick pick menu
 
@@ -52,27 +31,13 @@ to get list of commands and pick one of them.
 | `surround.with` (ctrl+shift+T)                     | List of all the enabled commands below                          |
 | `surround.with.if`                                 | if ($condition) { ... }                                         |
 | `surround.with.ifElse`                             | if ($condition) { ... } else { $else }                          |
-| `surround.with.tryCatch`                           | try { ... } catch (err) { $catchBlock }                         |
-| `surround.with.tryFinally`                         | try { ... } finally { $finalBlock }                             |
-| `surround.with.tryCatchFinally`                    | try { ... } catch (err) {$catchBlock} finally { $finalBlock }   |
-| `surround.with.for`                                | for ($1) { ... }                                                |
-| `surround.with.fori`                               | for (let i = 0; ... ; i = i + 1) { ... }                        |
-| `surround.with.forEach`                            | items.forEach((item) => { ... })                                |
-| `surround.with.forEachAsync`                       | items.forEach(async (item) => { ... })                          |
-| `surround.with.forEachFn`                          | items.forEach(function (item) { ... })                          |
-| `surround.with.forEachAsyncFn`                     | items.forEach(async function (item) { ... })                    |
-| `surround.with.arrowFunction`                      | const $name = ($params) => { ... }                              |
-| `surround.with.asyncArrowFunction`                 | const $name = async ($params) => { ... }                        |
+| `surround.with.tryCatch`                           | try { ... } catch (\Exception $exception) { $catchBlock }                         |
+| `surround.with.foreach`                            | foreach ($1 as $2) { ... }                                      |
+| `surround.with.for`                                | for ($i = 0; ... ; $i++) { ... }                                |
+| `surround.with.arrowFunction`                      | fn ($params) => ...                                             |
 | `surround.with.functionDeclaration`                | function $name ($params) { ... }                                |
-| `surround.with.asyncFunctionDeclaration`           | async function $name ($params) { ... }                          |
-| `surround.with.functionExpression`                 | const $name = function ($params) { ... }                        |
-| `surround.with.asyncFunctionExpression`            | const $name = async function ($params) { ... }                  |
-| `surround.with.element`                            | \<element\>...\</element\>                                      |
 | `surround.with.comment`                            | /\*\* ... \*/                                                   |
 | `surround.with.region`                             | #region $regionName ... #endregion                              |
-| `surround.with.templateLiteral` 🚀**New!**         | `...` (Also replaces single and double quotes with backtick)    |
-| `surround.with.templateLiteralVariable` 🚀**New!** | `${...}` (Also replaces single and double quotes with backtick) |
-| `surround.with.iife` 🚀**New!**                    | (function $name($params){ ... })($arguments);                   |
 
 ## Options
 
@@ -198,12 +163,8 @@ If you are planning to contribute to **any** open source project,
 before starting development, please **always open an issue** and **make a proposal first**.
 This will save you from working on features that are eventually going to be rejected for some reason.
 
-## Logo
-
-I designed the logo on [canva.com](https://canva.com) and inspired by one of their free templates.
-
 ## LICENCE
 
-MIT (c) 2021 Mehmet Yatkı
+MIT (c) 2023 Henrique Miranda
 
 **Enjoy!**
