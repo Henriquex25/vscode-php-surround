@@ -3,13 +3,9 @@
 
 *A fork of the [Surround](https://github.com/yatki/vscode-surround/tree/master) extension*
 
-### Demo 1: Choosing a wrapper snippet from quick pick menu
+### Demo: Choosing a wrapper snippet from quick pick menu
 
-![Demo 1](https://raw.githubusercontent.com/yatki/vscode-surround/master/images/demo.gif)
-
-### Demo 2: Wrapping multi selections
-
-![Demo 2](https://raw.githubusercontent.com/yatki/vscode-surround/master/images/demo2.gif)
+![Demo](https://raw.githubusercontent.com/Henriquex25/vscode-php-surround/master/images/tc.gif)
 
 ## How To Use
 
