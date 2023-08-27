@@ -34,7 +34,7 @@ describe("previousVersion is defined", () => {
     activate(context as ExtensionContext);
 
     expect(context.globalState.get).toBeCalledWith(
-      "yatki.vscode-surround:last-version"
+      "HenriqueMiranda.vscode-php-surround:last-version"
     );
   });
 });

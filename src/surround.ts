@@ -221,8 +221,8 @@ function registerCommands(
   });
 }
 
-const SURROUND_LAST_VERSION_KEY = "yatki.vscode-surround:last-version";
-const PENDING_FOCUS = "yatki.vscode-surround:pending-focus";
+const SURROUND_LAST_VERSION_KEY = "HenriqueMiranda.vscode-php-surround:last-version";
+const PENDING_FOCUS = "HenriqueMiranda.vscode-php-surround:pending-focus";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -234,7 +234,7 @@ export function activate(context: ExtensionContext) {
   const previousVersion = context.globalState.get<string>(
     SURROUND_LAST_VERSION_KEY
   );
-  const surroundExt = extensions.getExtension("henriquex25.vscode-php-surround")!;
+  const surroundExt = extensions.getExtension("HenriqueMiranda.vscode-php-surround")!;
   const surroundVersion = surroundExt.packageJSON.version;
 
   function update() {

@@ -2,8 +2,8 @@
   "name": "vscode-php-surround",
   "displayName": "PHP Surround",
   "description": "Wrap blocks of PHP code quickly! 🚀",
-  "version": "1.0.0",
-  "publisher": "henriquex25",
+  "version": "1.0.1",
+  "publisher": "HenriqueMiranda",
   "licence": "LICENCE",
   "bugs": {
     "url": "https://github.com/Henriquex25/vscode-php-surround/issues"
@@ -30,7 +30,6 @@
     "format"
   ],
   "markdown": "github",
-  "icon": "images/logo.png",
   "galleryBanner": {
     "color": "#c2e1ea",
     "theme": "light"
