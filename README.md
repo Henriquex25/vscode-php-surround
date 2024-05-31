@@ -20,6 +20,7 @@ After selecting the code block, you can
 | -------------------------------------------------- | --------------------------------------------------------------- |
 | `surround.with` (ctrl+shift+T)                     | List of all the enabled commands below                          |
 | `surround.with.if`                                 | if ($condition) { ... }                                         |
+| `surround.with.ifCondition`                        | if (...) { $code }                                              |
 | `surround.with.ifElse`                             | if ($condition) { ... } else { $else }                          |
 | `surround.with.tryCatch`                           | try { ... } catch (\Exception $exception) { $catchBlock }       |
 | `surround.with.foreach`                            | foreach ($1 as $2) { ... }                                      |

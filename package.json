@@ -2,7 +2,7 @@
   "name": "vscode-php-surround",
   "displayName": "PHP Surround",
   "description": "Wrap blocks of PHP code quickly! 🚀",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "HenriqueMiranda",
   "licence": "LICENCE",
   "bugs": {
@@ -69,7 +69,19 @@
             "label": "if",
             "description": "if ($condition) { ... }",
             "disabled": false,
-            "snippet": "if(${1:\\$condition}) {\n\t$TM_SELECTED_TEXT\n}$0",
+            "snippet": "if (${1:\\$condition}) {\n\t$TM_SELECTED_TEXT\n}$0",
+            "languageIds": [
+                "php"
+            ]
+          }
+        },
+        "surround.with.ifCondition": {
+          "type": "object",
+          "default": {
+            "label": "if condition",
+            "description": "if ($condition) { ... }",
+            "disabled": false,
+            "snippet": "if ($TM_SELECTED_TEXT) {\n\t${1:// code...}\n}$0",
             "languageIds": [
                 "php"
             ]
@@ -81,7 +93,7 @@
             "label": "if/else",
             "description": "if ($condition) { ... } else { $else }",
             "disabled": false,
-            "snippet": "if(${1:\\$condition}) {\n\t$TM_SELECTED_TEXT\n} else {\n\t$2\n}$0",
+            "snippet": "if (${1:\\$condition}) {\n\t$TM_SELECTED_TEXT\n} else {\n\t$2\n}$0",
             "languageIds": [
                 "php"
             ]
@@ -181,6 +193,11 @@
       {
         "command": "surround.with.if",
         "title": "if",
+        "category": "Surround With"
+      },
+      {
+        "command": "surround.with.ifCondition",
+        "title": "if condition",
         "category": "Surround With"
       },
       {
